@@ -1,10 +1,14 @@
 import React from 'react';
-import DailyTask from '../dailytask';
+import TaskList from '../tasklist';
 
 function Agenda() {
     return (
-        <DailyTask />
+        <>
+          <TaskList name="Overdue" />
+          <TaskList name="Today" />
+        </>
       );
+      
 }
 
 export default Agenda;

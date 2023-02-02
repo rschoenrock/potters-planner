@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
 
-function DailyTask() {
+interface DailyTaskProps {
+  taskNumber: number;
+}
+
+class DailyTask extends React.Component<DailyTaskProps, {}> {
+  render() {
     return (
-        <div className="App">
-            <p>Yay!</p>
-        </div>
+      <li>
+        <p>Yay {this.props.taskNumber}!</p>
+      </li>
     );
+  }
 }
 
 export default DailyTask;
